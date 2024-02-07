@@ -141,6 +141,18 @@ main{
             }
             button{
                 align-self: center;
+                // align-items: center; 這個是沒有效果的
+                /*
+                    By Kari:
+                        align-item: 
+                            設定於flex container,
+                            實現於flex items.
+                            ex: box裡面的items的A,B,C都在center.
+                        align-self:
+                            設定於flex item上.
+                            ex: box裡面item D卻在bottom.
+                */
+
                 background-color: #E08958;
                 color: white;
                 border: none;

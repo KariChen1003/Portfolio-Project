@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +126,16 @@ main section.form form div textarea {
 }
 main section.form form button {
   align-self: center;
+  /*
+      By Kari:
+          align-item: 
+              設定於flex container,
+              實現於flex items.
+              ex: box裡面的items的A,B,C都在center.
+          align-self:
+              設定於flex item上.
+              ex: box裡面item D卻在bottom.
+  */
   background-color: #E08958;
   color: white;
   border: none;
