@@ -61,6 +61,91 @@ main section.right img {
   position: absolute;
   top: 30vh;
 }
+main section.table {
+  flex: 3 1 500px;
+  padding: 2rem;
+}
+main section.table table {
+  border-collapse: collapse;
+}
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+main section.table table tr td {
+  padding: 0.8rem;
+}
+main section.table table tr:hover {
+  background-color: #ffd2b8;
+}
+main section.picture {
+  flex: 1 1 600px;
+  position: relative;
+}
+main section.picture img {
+  width: 30vw;
+}
+main section.picture div.orangeRect {
+  width: 30vw;
+  height: 70vh;
+  background-color: #E08958;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  z-index: -1;
+}
+main section.form {
+  flex: 1 1 600px;
+}
+main section.form form {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+main section.form form div {
+  margin: 0.5rem;
+}
+main section.form form div label {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #ffaa79;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  width: 90%;
+}
+main section.form form div textarea {
+  vertical-align: top;
+}
+main section.form form button {
+  align-self: center;
+  background-color: #E08958;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+main div.line {
+  background-color: gray;
+  width: 3px;
+}
+main section.contact {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+main section.contact div.content h2 {
+  margin: 1rem 0rem;
+}
 
 footer a .first {
   padding: 1rem 1rem 1rem 4rem;
@@ -96,6 +181,17 @@ footer a .other {
     transform: none;
     width: 50vw;
     height: 50vw;
+  }
+  main section.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.picture img {
+    width: 60vw;
+  }
+  main section.picture div.orangeRect {
+    display: none;
   }
   footer {
     display: flex;

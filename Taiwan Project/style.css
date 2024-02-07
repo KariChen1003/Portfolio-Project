@@ -1,0 +1,85 @@
+* {
+    /* 因為有些標籤預設都會有padding或是margin */
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    /* 要用字型,需要加入的東西 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-weight: normal;
+}
+
+header {
+    background-color: #c4c4c4;
+    width: 100%; /*why??????????????????????????????????????? */
+    padding: 1rem;
+}
+
+nav {
+    background-color: #3b383c;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+nav ul li{
+    padding: 0.5rem 0.75rem;
+}
+
+nav ul li a{
+    color: rgb(116, 115, 115);
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: all 1s ease;
+}
+
+headerTitle{
+    font-size: 2.5rem;
+}
+
+headerText{
+    font-size: 1rem;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+section.left, section.right{
+    padding: 1rem;
+}
+
+section.right h4{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+section.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.right p{
+    margin: 1rem 0rem;
+}
+
+.active{
+    color: white;
+}
+
+nav ul li a:hover{
+    color: white;
+}

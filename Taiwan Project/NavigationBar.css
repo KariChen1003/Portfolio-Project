@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+
+/* 
+    方法一: 只有a文字的部分會有背景顏色(可觸控的),而不是整個li
+        1. padding在li上,a就不需要
+*/
+
+
+nav ul li{
+    padding: 0.5rem 0.75rem;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover{
+    color: blueviolet;
+}
+
+
+/* 
+    方法二: 整個li部分會有背景顏色(可觸控的) 
+        1. padding在a上面(代表a的範圍是一個框,而不是字而已)
+        2. li需要設定flex,不然a的上下padding會失效
+*/
+
+
+/* nav ul li{
+    display: flex;
+}
+
+nav ul a{
+    padding: 0.5rem 0.75rem;
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover{
+    background-color: yellow;
+} */
